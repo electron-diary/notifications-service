@@ -4,4 +4,4 @@ from app.domain.common.value_objects import DomainValueObject
 
 @dataclass
 class DomainEntity[EntityId: DomainValueObject]:
-    uuid: EntityId
+    contact: EntityId
