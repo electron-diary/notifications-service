@@ -10,7 +10,7 @@ from app.application.interfaces.interactor import Interactor
 from app.application.dto.send_message_notification_request_dto import SendMessageNotificationRequestDto
 
 
-class SendEmailNotificationUseCase(Interactor[SendMessageNotificationRequestDto, None]):
+class SendMessageNotificationUseCase(Interactor[SendMessageNotificationRequestDto, None]):
     def __init__(self: Self, message_notifications_repository: MessageNotificationRepository) -> None:
         self.message_notification_repository: MessageNotificationRepository = message_notifications_repository
 
